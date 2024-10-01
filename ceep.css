@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: #f41e1e;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+        width: 80px; /* Ajuste a largura */
+        height: 80px; /* Ajuste a altura */
+        background-image: url(logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 15;
+ } 
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+    height: 100vh;
+    background: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto .titulo{
+    color: #f41e1e;
+    font-size: 60px;
+    font-weight: 600;
+}
+.texto .sub_titulo{
+    color: #000;
+    font-size: 58px;
+    font-weight: 600;
+}
+.texto .botoes{
+    margin-top: 30px;
+}
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.texto .botoes button.n-overlay{
+    color: #f41e1e;
+    background: none;
+    border: 2px solid white;
+}
+.texto .botoes button.n-overlay:hover{
+    color: black;
+    background-color: white;
+}
+.texto .botoes button.overlay{
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+@keyframes vibrar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+footer {
+    border: 1px solid #f41e1e;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: -40px; /* Footer inicialmente escondido */
+    transition: bottom 1.0s; /* Efeito de transição */
+    
+  }
+  
+  footer:hover {
+    bottom: 0; /* Footer aparece quando passa o mouse em cima */
+  }
+  
+#brasao {
+        position: absolute;
+        left: 20px;
+        bottom: 0px;
+        width: 60px; /* Ajuste a largura */
+        height: 60px; /* Ajuste a altura */
+        background-image: url(1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 15;
+}
